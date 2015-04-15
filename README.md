@@ -45,5 +45,5 @@ Instructions
   - You should replace `return undefined;` with appropriate return statements.
 - Add **cs290osu** as a collaborator. This will be an account that myself and the TAs share to access your repos.
 - To test your code open the `qunit_runner.html` web page locally. Along with the red errors check for statements saying something like `Expected 4 assertions, but 2 were run`. This means that the test had to abort early due to a error it could not recover from. That means there are two additional tests that are not even getting run.
-  - Given the nature of automated tests, it is easy to see what the expected values are and simply hard code those returns. If you do this for any portion of the assignment, you will get a 0 for the whole assignment. (For example, variableModification should work for any value, not just 42, but we are only testing the value 42. If you hardcode the values `47`, `'42'` and `'42foo'` that is a violation of this rule. )
->>>>>>> 6a5ca82fbdd8c4ddf1f46da9843a0b3638c5cb74
+  - Given the nature of automated tests, it is easy to see what the expected values are and simply hard code those returns. If you do this for any portion of the assignment, you will get a 0 for the whole assignment. (For example, variableModification should work for any value, not just 42, but we are only testing the value 42. If you hardcode the values `47`, `'42'` and `'42foo'` that is a violation of this rule.
+  - 
