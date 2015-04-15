@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# cs290-assignment3
-=======
 Basic JavaScript Assignment
 ===========================
 
