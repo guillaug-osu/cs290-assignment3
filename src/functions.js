@@ -13,7 +13,10 @@
 */
 
 //your code here
-
+function uselessFunction()
+{
+    return null;
+}
 //end your code
 
 var bar = 'not a function';
@@ -30,6 +33,26 @@ var barType = typeof bar;
 */
 
 //your code here
+var bar = function anonymous(doubleArray){
+    
+    var j;
+    for(j = 0; j < doubleArray.length; j++)
+    {
+        if(!isNaN(doubleArray[j]))
+        {
+            doubleArray[j] *= 2;
+        }
+        else
+        return false;
+    }
+    
+    if(j === doubleArray.length)
+    {
+        return true;
+    }
+    else
+    return false;
+}
 
 //end your code
 
@@ -66,5 +89,49 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+
+function parseGit(logArray){
+    var hash = '';
+    var date = '';
+    var message = '';
+    var array = new Array();
+    
+    for(var j = 0; j < logArray.length; j++)
+    {
+        for(var k = 0; k < logArray[j].length; k++)
+        {
+            if(logArray[j].charAt(k) === ' ')
+            {
+                break;
+            }
+            hash += logArray[j].charAt(k);
+        }
+        
+        for(k; k < logArray[j].length; k++)
+        {
+            if(logArray[j].charAt(k) === '\"')
+            {
+                break;
+            }
+            date += logArray[j].charAt(k);
+        }
+        for(k; k < logArray[j].length; k++)
+        {
+            if(logArray[j].charAt(k) === '\"')
+            {
+                continue;
+            }
+            message += logArray[j].charAt(k);
+        }
+        
+        array[j] = new GitLog(hash,new Date(date), message);
+        hash = '';
+        date = '';
+        message = '';
+        
+    }
+    
+    return array;
+}
 
 //end your code
