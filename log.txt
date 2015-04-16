@@ -1,4 +1,10 @@
 Start: 
+End: Thu, 16 Apr 2015 17:46:51 +0000 
+Tasks: Finished objects.js. Spent hours not realizing that an assignment to an array does not change the reference. Finally figured it out.
+Start: 
+End: Thu, 16 Apr 2015 01:37:39 +0000 
+Tasks: changed log to reflect changes in functions.js
+Start: 
 End: Thu, 16 Apr 2015 01:31:56 +0000 
 Tasks: Finished coding functions javascript file
 Start: 
